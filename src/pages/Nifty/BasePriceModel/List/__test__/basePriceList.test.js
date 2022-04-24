@@ -8,7 +8,7 @@ jest.mock("react-admin", () => ({
   useHistory: () => {},
 }));
 
-///These Test Cases are using  inbuild Testing Library
+
 describe("Base Price List test cases", () => {
   let result;
   let labels;
