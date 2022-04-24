@@ -1,0 +1,28 @@
+const allocationManager = {
+  am_rule_name: "Allocation Manager",
+  am_path_name: "Order Allocation",
+  am_path_end_name: " Allocation Manager",
+  am_update_button: "UPDATE",
+  am_distance: "Distance",
+  am_same_day: "Same Day",
+  am_next_day: "Next Day",
+  am_future: "Future",
+  am_from_time: "From Time",
+  am_to_time: "To Time",
+  am_toast_success: "Configuration Successfully Updated",
+  am_distance_from_pincode: "Distance from Pincode (KMS)",
+  am_timeBeforeRejection: "Time Period Before Auto-Reject(HRS))",
+  am_autoRejection: "Global Auto-Rejection Working Hours",
+  am_fc_name: "FC Name",
+  am_fc_id: "FC ID",
+  am_addNewRule: "Add New Rule",
+  am_search_label: "Add Fulfilment Center to Exclude",
+  am_search_text: "FC Name/ID",
+  helper_text: "Use commas to add multiple FC's",
+  add_toListButton: "Add To List",
+  am_id_name: "ID or Name",
+  am_delete_all: "Delete All",
+  add_list: "Click on Update button to save",
+};
+
+export default allocationManager;

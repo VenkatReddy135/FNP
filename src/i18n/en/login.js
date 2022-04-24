@@ -1,0 +1,38 @@
+const loginMessages = {
+  hello: "👋 Hello!",
+  loginSectionHeader: "Login",
+  emailLabel: "Email",
+  passwordLabel: "Password",
+  loginButton: "Login",
+  forgotPasswordLink: "Forgot Password?",
+  emailError: "Invalid Email",
+  passwordError: "This is required field",
+  forgotForm: {
+    sectionHeader: "Forgot Password?",
+    sectionDescription: "We will send you a link on your registered email to reset your password",
+    emailLabel: "Email",
+    buttonText: "Send Reset Password Link",
+    backToLoginText: "Back to Login",
+    successSectionHeading: "Reset Password",
+    successSectionDescription: "We have sent you reset password link on your registered email",
+    emailError: "Invalid Email",
+  },
+  resetForm: {
+    formTitle: "Reset Password",
+    passLabel: "New Password",
+    confirmPassLabel: "Confirm Password",
+    successMsg: "Reset Password Success",
+    successMsgTitle: "You can now Login to your account using your new password",
+    newPassValidationMsg: "Please enter new password",
+    confirmPassValidation: "Please enter confirm password",
+    passMatchMsg: "Passwords do not match",
+    uppercase: ",atleast 1 uppercase letter",
+    lowercase: ",a lower case letter",
+    number: ",a number",
+    specialChar: " and a special character",
+    passLength: "Password must contain total",
+    characters: "characters",
+  },
+};
+
+export default loginMessages;

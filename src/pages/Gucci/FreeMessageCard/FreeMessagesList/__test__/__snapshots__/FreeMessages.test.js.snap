@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Free message list test cases should render FreeMessagesList component 1`] = `
+Array [
+  <div
+    className="MuiGrid-root makeStyles-gridStyle-32 MuiGrid-item"
+  >
+    <h5
+      className="MuiTypography-root makeStyles-titleLineHeight-35 MuiTypography-h5 MuiTypography-colorInherit"
+    >
+      100th Birthday
+    </h5>
+  </div>,
+  <hr
+    className="MuiDivider-root"
+  />,
+]
+`;

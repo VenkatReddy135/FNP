@@ -1,0 +1,403 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render without crashing the component matches snapshot 1`] = `
+Array [
+  <div
+    className="MuiGrid-root makeStyles-titleGridStyle-108 MuiGrid-container MuiGrid-justify-xs-space-between"
+  >
+    <h5
+      className="MuiTypography-root makeStyles-gridStyle-135 MuiTypography-h5"
+    />
+  </div>,
+  <hr
+    className="MuiDivider-root makeStyles-dividerStyle-149"
+  />,
+  <div
+    className="MuiCardContent-root RaCardContentInner-root-181"
+  >
+    <div
+      className="ra-field ra-field-undefined"
+    >
+      <form
+        className="simple-form"
+      >
+        <div
+          className="MuiCardContent-root RaCardContentInner-root-181"
+        >
+          <div
+            className="ra-input ra-input-undefined"
+          >
+            <div
+              className="MuiGrid-root RaFormInput-input-182 MuiGrid-container MuiGrid-spacing-xs-7 MuiGrid-item"
+              mb={1}
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item"
+              >
+                <div
+                  className="MuiFormControl-root MuiTextField-root makeStyles-textInputField-147 MuiFormControl-marginDense"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-filled Mui-disabled Mui-disabled"
+                    data-shrink={false}
+                    htmlFor="contactType"
+                    id="contactType-label"
+                  >
+                    <span>
+                      contact_type
+                    </span>
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-describedby="contactType-helper-text"
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+                      disabled={true}
+                      id="contactType"
+                      name="contactType"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    className="MuiFormHelperText-root MuiFormHelperText-contained Mui-disabled MuiFormHelperText-marginDense"
+                    id="contactType-helper-text"
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </p>
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item"
+              >
+                <div
+                  aria-expanded={false}
+                  aria-haspopup="listbox"
+                  aria-labelledby="downshift-1-label"
+                  aria-owns={null}
+                  className="RaAutocompleteInput-container-188"
+                  role="combobox"
+                >
+                  <div
+                    aria-activedescendant={null}
+                    aria-autocomplete="list"
+                    aria-controls={null}
+                    aria-labelledby="downshift-1-label"
+                    className="MuiFormControl-root MuiTextField-root makeStyles-autoCompleteItem-112 MuiFormControl-marginDense"
+                    onKeyDown={[Function]}
+                  >
+                    <label
+                      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-filled"
+                      data-shrink={false}
+                      htmlFor="contactPurposeId"
+                      id="downshift-1-label"
+                    >
+                      <span>
+                        contact_purpose
+                      </span>
+                    </label>
+                    <div
+                      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
+                      onClick={[Function]}
+                    >
+                      <input
+                        aria-describedby="contactPurposeId-helper-text"
+                        aria-invalid={false}
+                        autoComplete="off"
+                        autoFocus={false}
+                        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+                        disabled={false}
+                        id="contactPurposeId"
+                        name="contactPurposeId"
+                        onAnimationStart={[Function]}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        required={false}
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                    <p
+                      className="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-marginDense"
+                      id="contactPurposeId-helper-text"
+                    >
+                      <span
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "&#8203;",
+                          }
+                        }
+                      />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ra-input ra-input-undefined"
+          >
+            <div
+              className="MuiGrid-root RaFormInput-input-182 makeStyles-gridMarginStyle-152 MuiGrid-item"
+            >
+              <div
+                className="MuiFormGroup-root"
+              >
+                <label
+                  className="MuiFormControlLabel-root"
+                >
+                  <span
+                    className="MuiSwitch-root"
+                  >
+                    <span
+                      aria-disabled={false}
+                      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-197 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                      onBlur={[Function]}
+                      onDragLeave={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={[Function]}
+                      onMouseUp={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      tabIndex={null}
+                    >
+                      <span
+                        className="MuiIconButton-label"
+                      >
+                        <input
+                          checked={false}
+                          className="PrivateSwitchBase-input-200 MuiSwitch-input"
+                          id="primary"
+                          name="primary"
+                          onChange={[Function]}
+                          type="checkbox"
+                        />
+                        <span
+                          className="MuiSwitch-thumb"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      className="MuiSwitch-track"
+                    />
+                  </span>
+                  <span
+                    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                  >
+                    <span>
+                      primary
+                    </span>
+                  </span>
+                </label>
+                <p
+                  className="MuiFormHelperText-root"
+                >
+                  <span
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "&#8203;",
+                      }
+                    }
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ra-input ra-input-undefined"
+          >
+            <div
+              className="MuiGrid-root makeStyles-plusButton-162 MuiGrid-container MuiGrid-spacing-xs-7 MuiGrid-item"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-item"
+              >
+                <div
+                  className="MuiFormControl-root MuiTextField-root makeStyles-dateField-117 MuiFormControl-marginDense"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
+                    data-shrink={true}
+                    htmlFor="fromDate"
+                    id="fromDate-label"
+                  >
+                    <span>
+                      from_date
+                    </span>
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-describedby="fromDate-helper-text"
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+                      disabled={true}
+                      id="fromDate"
+                      name="fromDate"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="date"
+                      value="2021-06-26"
+                    />
+                  </div>
+                  <p
+                    className="MuiFormHelperText-root MuiFormHelperText-contained Mui-disabled MuiFormHelperText-filled MuiFormHelperText-marginDense"
+                    id="fromDate-helper-text"
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </p>
+                </div>
+              </div>
+              <div
+                className="MuiGrid-root MuiGrid-item"
+              >
+                <div
+                  className="MuiFormControl-root MuiTextField-root makeStyles-dateField-117 MuiFormControl-marginDense"
+                >
+                  <label
+                    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-filled MuiFormLabel-filled"
+                    data-shrink={true}
+                    htmlFor="throughDate"
+                    id="throughDate-label"
+                  >
+                    <span>
+                      through_date
+                    </span>
+                  </label>
+                  <div
+                    className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
+                    onClick={[Function]}
+                  >
+                    <input
+                      aria-describedby="throughDate-helper-text"
+                      aria-invalid={false}
+                      autoFocus={false}
+                      className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+                      disabled={false}
+                      id="throughDate"
+                      name="throughDate"
+                      onAnimationStart={[Function]}
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      required={false}
+                      type="date"
+                      value="2021-06-27"
+                    />
+                  </div>
+                  <p
+                    className="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-filled MuiFormHelperText-marginDense"
+                    id="throughDate-helper-text"
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiToolbar-root MuiToolbar-regular RaToolbar-toolbar-201 RaToolbar-mobileToolbar-203 MuiToolbar-gutters"
+          role="toolbar"
+        >
+          <button
+            aria-label="cancel"
+            className="MuiButtonBase-root MuiButton-root MuiButton-outlined RaButton-button-206 MuiButton-outlinedPrimary MuiButton-outlinedSizeSmall MuiButton-sizeSmall"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              <span
+                className="RaButton-label-207"
+              >
+                cancel
+              </span>
+            </span>
+          </button>
+          <button
+            aria-label="update"
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained RaSaveButton-button-212 MuiButton-containedPrimary"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="submit"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              update
+            </span>
+          </button>
+        </div>
+        <div
+          className="RaToolbar-spacer-205"
+        />
+      </form>
+    </div>
+  </div>,
+]
+`;

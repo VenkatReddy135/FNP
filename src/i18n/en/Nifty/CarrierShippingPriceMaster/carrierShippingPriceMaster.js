@@ -1,0 +1,38 @@
+const carrierShippingPriceMaster = {
+  carrierShippingPriceMaster: {
+    carrier_shipping_price_master_search: "Search",
+    carrier_shipping_price_master_refine_search: "Refine Search",
+    fulfillment_center: "Fulfillment center",
+    delivery_area: "Delivery Area",
+    time_slot: "Time Slot",
+    uom_type: "UOM Type",
+    shipping_rate_type_configuration: "Shipping Rate Type Configuration",
+    multi_tier_configuration: "Multi Tiered Configuration",
+    single_tier_configuration: "Single Tiered Configuration",
+    range_from: "Range From",
+    range_to: "Range To",
+    carrier_shipping_price_master: "Carrier Shipping Price Master",
+    positive_validation: "Number should be positive",
+    new_shipment_rate: "New Shipment Rate",
+    config_code: "Configuration Code",
+    fulfillment_center_name: "Fulfillment Center Name",
+    uom_values: "UOM Values",
+    origin_geo: "Origin Geo",
+    carrier_name: "Carrier Name",
+    shipping_rate_type: "Shipping Rate Type",
+    shipping_method_name: "Shipping Method Name",
+    is_enabled: "Is Enabled",
+    manage_shipment_rate_type_configuration: "Manage Shipment Rate Type Configuration *",
+    rate: "Rate",
+    rate_range_validation: "Invalid range value",
+    config_code_validation_msg: "Invalid Data, Please enter lower case alphabets, numbers and underscores only",
+    create_modal_message: "Are you sure you want to add the New Shipping Rate?",
+    update_modal_message: "Are you sure you want to update the Shipping Rate?",
+    delete_modal_message: "Are you sure you want to delete the Shipping Rate?",
+    validation_message: "Shipment Rate Type configuration is mandatory",
+    config_modal_message:
+      "Manage Shipment Rate Type configurations will be deleted. Kindly confirm if you want to update the Shipment Rate type",
+  },
+};
+
+export default carrierShippingPriceMaster;

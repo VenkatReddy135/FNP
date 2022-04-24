@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-cm
+data:
+  config.js: |
+    window.REACT_APP_API_HOST = '{{ .Values.zeusFrontendConfig.API_GATEWAY_URL }}';
+    window.REACT_APP_ENVIRONMENT = '{{ .Values.zeusFrontendConfig.APP_ENVIRONMENT }}';
+    window.REACT_APP_CONTENT_LINK = '{{ .Values.zeusFrontendConfig.APP_CONTENT }}'; 

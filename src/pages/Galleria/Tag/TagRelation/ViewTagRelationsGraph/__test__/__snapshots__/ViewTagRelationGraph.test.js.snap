@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag realtion Graph test cases should match snapshot 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+>
+  <h4
+    className="MuiTypography-root MuiTypography-h4"
+  >
+    view_tag_relation
+  </h4>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+    data-at-id="close"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      close
+    </span>
+  </button>
+</div>
+`;

@@ -1,0 +1,15 @@
+{
+  "tags": {
+    "allowUnknownTags": "all"
+  },
+  "source": {
+    "include": ["src"],
+    "includePattern": "\\.(jsx|js)$"
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true
+  }
+}

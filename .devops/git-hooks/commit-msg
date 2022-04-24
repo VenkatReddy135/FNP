@@ -1,0 +1,30 @@
+#!/bin/sh
+# This hook will make sure that the commit message contains a JIRA issue.
+#
+# To enable this hook, rename this file to ".git/hooks/commit-msg".
+# Make sure to add execution permissions to the file.
+
+#export MESSAGE=$(<$1)
+#export JIRA_ISSUE_TAG='REV2-([0-9]*)'
+#
+#if [[ $MESSAGE =~ .*REV2-[0]9]+.* ]]; then
+#echo -e "\e[32mGreat, your commit message contains a JIRA issue!\e[0m"
+#exit 0;
+#fi
+#
+#echo -e "\e[31mOh hamburgers … You forgot to add a JIRA issue number!\e[0m";
+#exit 1;
+
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+
+#Assumption: Jira Ticket Id starts with [DM-<At least 3 digit jira ticket number>]<One Space><Commit message>
+
+test "" != "$(grep 'REV2\-[0-9]\{2,6\}' "$1")" || {
+        echo >&2 "ERROR: Commit message is missing Jira issue number."
+        echo >&2 "Example: [REV2-21323] My commit message"
+        exit 1
+}

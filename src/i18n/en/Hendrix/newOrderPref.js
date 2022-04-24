@@ -1,0 +1,27 @@
+const newOrderPref = {
+  order_allocation: "Order Allocation ",
+  neworder_title: " New FC Preference",
+  neworder_fc_title: " New FC Preference for:",
+  geography: "Geography",
+  fc: "Fulfilment Center",
+  geo_group: "Geo Group",
+  delivery_mode: "Delivery Mode",
+  date_range: "Date Range",
+  view: "VIEW",
+  update: "UPDATE",
+  contains: "Contains",
+  search_by_pincode: "Search by Pincode",
+  btn_accept: "Yes",
+  btn_cancel: "No",
+  quotas_update_message: "Quotas Successfully Updated",
+  quotas_delete_message: "Quotas Successfully Deleted",
+  search: "SEARCH",
+  year_month: "Month/Year",
+  add_new_rule: "ADD NEW RULE",
+  edit_rule_newFc: "EDIT RULE",
+  key_deliveryMode: "deliveryMode",
+  key_fcId: "fcId",
+  copy_from_template: "Copy From Template",
+};
+
+export default newOrderPref;

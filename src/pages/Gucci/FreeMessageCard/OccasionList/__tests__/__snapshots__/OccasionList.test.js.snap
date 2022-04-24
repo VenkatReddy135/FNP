@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Occasion List test cases should render OccasionList component 1`] = `
+Array [
+  <div
+    className="MuiGrid-root makeStyles-gridStyle-32 MuiGrid-item"
+  >
+    <h5
+      className="MuiTypography-root makeStyles-titleLineHeight-35 MuiTypography-h5 MuiTypography-colorInherit"
+    >
+      free_message_config
+    </h5>
+  </div>,
+  <hr
+    className="MuiDivider-root"
+  />,
+]
+`;

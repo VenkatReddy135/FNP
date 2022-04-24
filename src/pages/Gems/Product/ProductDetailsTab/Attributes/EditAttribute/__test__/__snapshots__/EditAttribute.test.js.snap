@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feature List test cases should match the snapshot 1`] = `
+Array [
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+  >
+    <h5
+      className="MuiTypography-root makeStyles-gridStyle-1142 MuiTypography-h5"
+      data-testid="edit_attribute"
+    >
+      edit_attribute
+    </h5>
+  </div>,
+  <hr
+    className="MuiDivider-root makeStyles-dividerStyle-1156"
+  />,
+  <SimpleForm
+    initialValues={Object {}}
+    save={[Function]}
+    toolbar={
+      <CustomToolbar
+        disabled={false}
+        onClickCancel={[Function]}
+        onClickSubmit={[Function]}
+        saveButtonIcon={<React.Fragment />}
+        saveButtonLabel="update"
+      />
+    }
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-12"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            attribute_type
+          </span>
+          <h6
+            className="MuiTypography-root MuiTypography-h6"
+          />
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+      >
+        <TextInput
+          className="makeStyles-textInputField-1154"
+          data-testid="attribute_name"
+          label="attribute_name"
+          source="attributeName"
+          validate={
+            Array [
+              true,
+            ]
+          }
+        />
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+      >
+        <TextInput
+          className="makeStyles-textInputField-1154"
+          data-testid="attribute_value"
+          label="attribute_value"
+          source="attributeValue"
+          validate={
+            Array [
+              true,
+            ]
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-container"
+      data-testid="is_enabled"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <span
+          className="MuiTypography-root MuiTypography-caption"
+        >
+          is_enabled
+        </span>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <span
+          className="MuiSwitch-root"
+        >
+          <span
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1218 MuiSwitch-switchBase PrivateSwitchBase-checked-1219 Mui-checked"
+            data-at-id="switch"
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={null}
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <input
+                checked={true}
+                className="PrivateSwitchBase-input-1221 MuiSwitch-input"
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="MuiSwitch-thumb"
+              />
+            </span>
+          </span>
+          <span
+            className="MuiSwitch-track"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-listStyle-1159 MuiGrid-container"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-3"
+        data-testid="relations_created_by"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            relations_created_by
+          </span>
+          <h6
+            className="MuiTypography-root MuiTypography-h6"
+          >
+            -
+          </h6>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-9"
+        data-testid="relations_created_date"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            relations_created_date
+          </span>
+          <h6
+            className="MuiTypography-root MuiTypography-h6"
+          >
+            -
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-tabStyle-1158 MuiGrid-container"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-3"
+        data-testid="last_modified_by"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            last_modified_by
+          </span>
+          <h6
+            className="MuiTypography-root MuiTypography-h6"
+          >
+            -
+          </h6>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-9"
+        data-testid="last_modified_date"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4"
+        >
+          <span
+            className="MuiTypography-root MuiTypography-caption"
+          >
+            last_modified_date
+          </span>
+          <h6
+            className="MuiTypography-root MuiTypography-h6"
+          >
+            -
+          </h6>
+        </div>
+      </div>
+    </div>
+  </SimpleForm>,
+]
+`;

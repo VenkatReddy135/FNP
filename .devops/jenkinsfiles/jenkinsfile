@@ -1,0 +1,90 @@
+pipeline {
+    environment {
+        DOCKER_REPOSITORY_URI = '811454692736.dkr.ecr.ap-south-1.amazonaws.com/revvit2/dev/zeus-frontend'
+        registryCredentialId = 'ecr:ap-south-1:ecr-cred'
+    }
+
+    agent {
+        label "${AGENT}"
+    }
+
+    stages {
+        stage('Cloning Git Repo') {
+            steps {
+
+                sh '''
+
+                git clone git@git.fnp.com:revvit2/zeus-frontend.git && cd zeus-frontend
+                REL="$(git for-each-ref --sort=-committerdate| grep ${BRANCH}| head -n 1| cut -d"/" -f4,5)"
+                echo "Checking out branch ${REL}"
+                echo REL=\\"${REL}\\" > /tmp/cicd.txt
+                '''
+                load "/tmp/cicd.txt"
+                git branch: "${REL}",
+                url: 'git@git.fnp.com:revvit2/zeus-frontend.git'
+
+                sh '''
+
+                node -v
+                npm -v
+                npm install
+                npm run build:development
+
+                '''
+            }
+        }
+
+        stage('Build & push Docker image') {
+            steps {
+                withDockerRegistry(credentialsId: 'ecr:ap-south-1:ecr-cred', url: 'https://811454692736.dkr.ecr.ap-south-1.amazonaws.com') {
+
+                    sh '''
+
+                    GIT_COMMIT_ID="$(echo $(git rev-parse HEAD) | cut -c 1-7)"
+                    TIMESTAMP=$(date +'%Y%m%d.%H%M')
+                    export TAG_NAME=$DEPLOYMENT_ENV-v-$TIMESTAMP-$GIT_COMMIT_ID
+                    IMG_NAME="$DOCKER_REPOSITORY_URI:$TAG_NAME"
+                    docker build -t "$IMG_NAME" .
+                    docker push "$IMG_NAME"
+                    echo "TAG_NAME=$TAG_NAME" > tagname.ini
+                    docker rmi -f $IMG_NAME
+
+                    '''
+                }
+            }
+        }
+
+        stage('Deployment to eks-cluster') {
+            steps {
+
+                dir('devops') {
+                    git branch: '${DEVOPS_BRANCH}', credentialsId: 'devops-gitlab-ssh' , url: 'git@git.fnp.com:devops/devops.git'
+                }
+
+                withCredentials([file(credentialsId: "${KUBE_ENV}", variable: 'KUBECONFIG')]) {
+
+                sh '''
+                source $WORKSPACE/tagname.ini
+                helm upgrade --install zeus-frontend -f $WORKSPACE/devops/environment-values/${DEPLOYMENT_ENV}/zeus-frontend.yaml --set image.tag=$TAG_NAME $WORKSPACE/.devops/helm-charts/zeus-frontend
+
+                '''
+                }
+            }
+        }
+    }
+    post {
+            always {
+			emailext body: '''${SCRIPT, template="groovy-html.template"}''',
+			mimeType: 'text/html',
+			subject: "Jenkins Build ${currentBuild.currentResult} ${currentBuild.fullDisplayName}",
+			from: "noreply-jenkins@fnp.com",
+			replyTo: "noreply-jenkins@fnp.com",
+			to: "$TO_LIST",
+			recipientProviders: [
+			  [$class: 'RequesterRecipientProvider'],
+              [$class: 'CulpritsRecipientProvider'],
+              [$class: 'DevelopersRecipientProvider']
+			]
+		}
+    }
+}
